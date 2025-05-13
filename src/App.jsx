@@ -35,7 +35,7 @@ const App = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:3000/applications", {
+        const response = await fetch("http://lab-5-e0eq.onrender.com/applications", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -127,7 +127,7 @@ const App = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/applications", {
+      const response = await fetch("http://lab-5-e0eq.onrender.com/applications", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
