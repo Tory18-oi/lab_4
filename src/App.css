@@ -1,0 +1,342 @@
+/* Стиль для всього тіла сторінки */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url('./assets/1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Стилі для контейнера додатку */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Стилі для хедера */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Стилі для розділів */
+section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Базові стилі кнопок */
+button {
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Додаткові стилі для неактивних кнопок */
+button:disabled,
+button.applied {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+/* Спеціальні стилі для кнопок профілю */
+.profile-button {
+  background-color: #007BFF;
+}
+
+.add-skill-button {
+  background-color: #17a2b8; /* бірюзовий колір для додавання навичок */
+}
+
+.add-skill-button:hover {
+  background-color: #138496;
+}
+
+/* Стилі для кнопок у формі */
+form button {
+  background-color: #28a745;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Стилі для футера */
+footer {
+  margin-top: auto;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Стилі для карток вакансій */
+.vacancy-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.vacancy-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+.vacancy-card h3 {
+  margin-top: 0;
+}
+
+.vacancy-card p {
+  margin: 5px 0;
+}
+
+.vacancy-card a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.vacancy-card a:hover {
+  text-decoration: underline;
+}
+
+/* Стилі для форми пошуку */
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form select,
+form input[type="number"],
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* Стилі для коментарів */
+#comments {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 2px solid #ddd;
+}
+
+.comment-item {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Стилі для текстового поля коментарів */
+#commentText {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  height: 100px;
+}
+
+/* Стилі для списку коментарів */
+#commentList {
+  margin-top: 20px;
+}
+
+/* Модальне вікно */
+.modal-backdrop {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .vacancy-container {
+    grid-template-columns: 1fr;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+/* Глобальна плавність переходів */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Стилі для сторінки профілю */
+.profile-container {
+  background: white;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Заголовок профілю */
+.profile-container h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Блок поля профілю */
+.profile-field {
+  margin-bottom: 20px;
+}
+
+/* Назви полів */
+.profile-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* Стилі для input і textarea профілю */
+.profile-field input[type="text"],
+.profile-field textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Стилі для списку навичок */
+.skills-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Контейнер для кнопок у профілі */
+.profile-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Спеціальні стилі кнопок профілю */
+.profile-button-group button {
+  flex: 1 1 30%;
+  min-width: 150px;
+}
+
+/* Стиль для блоку додавання навички */
+.add-skill-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-skill-input input[type="text"] {
+  flex: 1;
+}
+
+.add-skill-input button {
+  flex: none;
+  width: 160px;
+}
+
+/* Адаптивність для профілю */
+@media (max-width: 600px) {
+  .profile-button-group {
+    flex-direction: column;
+  }
+}
+
+.navigation{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navigation {
+    width: 600px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

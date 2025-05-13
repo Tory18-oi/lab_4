@@ -1,0 +1,97 @@
+.profile-section {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-title {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .profile-input, .profile-textarea {
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    resize: none;
+    transition: border-color 0.3s;
+  }
+  
+  .profile-input:focus, .profile-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .profile-info {
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .profile-skill-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .profile-skill-item {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .profile-button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-button.back {
+    background-color: #6c757d;
+  }
+  
+  .profile-button.back:hover {
+    background-color: #5a6268;
+  }
+  
+  .profile-button.add-skill {
+    background-color: #28a745;
+  }
+  
+  .profile-button.add-skill:hover {
+    background-color: #218838;
+  }
+  
