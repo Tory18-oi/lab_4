@@ -11,7 +11,7 @@ const Applications = () => {
     const fetchApplications = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://lab-5-e0eq.onrender.com/applications", {
+        const res = await axios.get("https://lab-5-e0eq.onrender.com/applications", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
